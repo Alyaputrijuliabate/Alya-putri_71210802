@@ -39,23 +39,15 @@ class Kasir:
         if len(self._data) > self._size:
                 self.resize(2)
         print("=== Kasir ===")
-        c = len(self._data)-1
+        data = len(self._data)-1
         n = 1
         for i in range(0, (self._size)):            
-            if i <= c:
+            if i <= data:
                 print(n,".",self._data[i], end=' ')
                 print()
             else:
                 print(n,". Kosong")
             n += 1
-                
-        # else:
-        #     n = 1
-        #     for i in range(0, (self._capacity)):
-        #         print(n,".",self._data[i], end=' ')
-        #         n += 1
-        #         print()
-            
         print()
 
 # test case program
